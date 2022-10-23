@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "name" : "Do HomeWork",
+        "due" : "25-Oct-2022",
+	      "priority" : "Medium"
+    },
+    {
+        "id" : 2,
+        "name" : "Learn Java",
+        "due" : "26-Oct-2022",
+	      "priority" : "Low"
+    },
+    {
+        "id" : 3,
+        "name" : "Exercise",
+        "due" : "24-Oct-2022",
+	      "priority" : "Medium"
+    },
+    {
+        "id" : 4,
+        "name" : "Cleaning",
+        "due" : "25-Oct-2022",
+	"priority" : "Low"
+    },
+    {
+        "id" : 5,
+        "name" : "Meeting at 7pm",
+        "due" : "26-Oct-2022",
+	      "priority" : "High"
+    }
+]

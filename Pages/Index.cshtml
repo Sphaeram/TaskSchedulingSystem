@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "S-Tasks";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Your Tasks</h1>
+</div>
+
+<ol>
+    @foreach (var task in Model.Tasks)
+    {
+        <li>@task.name ________ (@task.due_date) _ <b>@task.priority</b></li>
+    }
+</ol>
