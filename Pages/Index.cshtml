@@ -4,13 +4,26 @@
     ViewData["Title"] = "S-Tasks";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Your Tasks</h1>
-</div>
+<div class="container bg-light p-3">
+    <center>
+        <form action="/FormHandler" method="get">
 
-<ol>
-    @foreach (var task in Model.Tasks)
-    {
-        <li>@task.name ________ (@task.due_date) _ <b>@task.priority</b></li>
-    }
-</ol>
+            <label for="id" class="text-left">Enter Task Id: </label>
+            <input id="id" type="number" name="id" class="form-control col-md-4" required />
+
+            <label for="name" class="text-left">Enter Task Name: </label>
+            <input id="name" type="text" name="name" class="form-control col-md-4" required />
+            <br />
+            <label for="priority" class="text-left">Enter Priority: </label>
+            <input id="priority" type="text" name="priority" class="form-control col-md-4" required />
+
+            <label for="due_date" class="text-left">Enter Due Date: </label>
+            <input id="due_date" type="text" name="due_date" class="form-control col-md-4" required />
+            <br />
+            <label for="image" class="text-left">Enter Image: </label>
+            <input id="image" type="text" name="image" class="form-control col-md-4" required />
+            <br />
+            <input type="submit" name="submit" value="Add Task" />
+        </form>
+    </center>
+</div>

@@ -7,9 +7,9 @@ namespace TaskSchedulingSystem.Model
     {
         public int id { get; set; }
         public string name { get; set; }
-        [JsonPropertyName("due")]
-        public string due_date { get; set; }
+        public string due { get; set; }
         public string priority { get; set; }
+        public string image { get; set; }
 
         public override string ToString()
         {

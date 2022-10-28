@@ -1,0 +1,18 @@
+﻿@page
+@model TaskSchedulingSystem.Pages.TaskListModel
+@{
+}
+
+ <div class="d-flex justify-content-between">
+     @foreach(var task in Model.Tasks)
+        {
+            <figure class="d-inline-block">
+                <img src="@task.image" />
+                <figcaption>
+                    @task.name <br>
+                   <u>@task.due</u> <br>
+                    <b><em>!@task.priority</em></b>
+                </figcaption>
+            </figure>
+        }
+ </div>
