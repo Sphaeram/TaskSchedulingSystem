@@ -26,6 +26,7 @@ namespace TaskSchedulingSystem
         {
             services.AddRazorPages();
             services.AddTransient<JsonFileTaskService>();
+            services.AddTransient<CSSFileService>();
             services.AddControllers();
         }
 
